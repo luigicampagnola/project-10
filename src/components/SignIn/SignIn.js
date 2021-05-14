@@ -18,7 +18,7 @@ class SignIn extends Component {
   };
 
   onSubmitSignIn = () => {
-    fetch("http://localhost:3000/signin", {
+    fetch("https://frozen-gorge-94134.herokuapp.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -84,8 +84,7 @@ class SignIn extends Component {
               <div className="lh-copy mt3">
                 <p
                   onClick={() => onRouteChange("register")}
-                  className="f6 link dim black db"
-                  className="pointer"
+                  className="f6 link dim black db pointer"
                 >
                   Register
                 </p>
